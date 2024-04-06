@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: arial;
 }
 .selector-for-some-widget {
     box-sizing: content-box;
@@ -88,12 +89,13 @@ ul li a:hover{
 }
 
 .menu .login-button, .menu .signup-button {
-    padding: 5px 15px;
+    padding: 5px 8px;
     background-color: #fff;
     color: #000;
     text-decoration: none;
     border: 2px solid #000;
-    border-radius: 50px;
+    border-radius: 30px;
+    font-size: 70%;
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
