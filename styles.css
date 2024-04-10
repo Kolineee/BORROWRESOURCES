@@ -2,66 +2,63 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: arial;
-}
-.selector-for-some-widget {
-    box-sizing: content-box;
- }
-
- .menu {
-    width: 100%;
-    min-width: 800px;
-    height: 40px;
-    background: linear-gradient(to right, #689d6a, #1c6920, #114720);
-    display: flex;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    align-items: center;
-    padding: 10 20px;
-    
-}
-ul li {
-    list-style: none;
-    margin-left: 30px;
-    margin-top: 7px;
-    font-size: 14px;
-}
-
-ul li a {
+    font-family: sans-serif;
     text-decoration: none;
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #689d6a, #1c6920, #114720);
     color: #fff;
-    font-family: Arial;
-    font-weight: bold;
-    transition: 0.5s ease-in-out;
+    padding: 12px ;
+    transition: all .50s ease;
 }
-ul li a:hover{
-    color:#114720;
-}
-
-
-.menu .box1 {
-    list-style-type: none;
+.navbar{
     display: flex;
 }
-
-.menu .box1 li {
-    margin-right: 20px;
+.navbar a{
+    color: #fff;
+    font-size: 1.0rem;
+    font-weight: 500;
+    padding: 0px 5;
+    margin: 0px 30px;
+    transition: all .50s ease;
 }
-
-.menu .search-container {
+.navbar a:hover,
+.navbar a.active{
+    color:  #114720;
+}
+.main{
     display: flex;
+  
 }
-
-.menu .srch {
+.main a{
+    color: #000000;
+    font-size: 1.0rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.main .srch {
     padding: 3px;
     border: 1px solid #fff; 
     border-radius:5px 0 0 5px;
     background: transparent;
+    width: 220px;
     
 }
 
-.menu .btn {
+.main .btn {
+    margin-right: 100px;
     padding: 5px 10px;
     background-color: #fff;
     border: none;
@@ -69,17 +66,12 @@ ul li a:hover{
     cursor: pointer;
     transition: background-color 0.3s ease-in;
 }
-.menu .btn:hover {
-    background-color:  #689d6a;
+.main .btn:hover {
+    background-color:  #000000;
     color: #fff;
 }
 
-
-.menu .buttons-container {
-    display: flex;
-}
-
-.menu .login-button, .menu .signup-button {
+.main .login-button, .main .signup-button {
     padding: 5px 8px;
     background-color: #fff;
     text-decoration: none;
@@ -91,18 +83,21 @@ ul li a:hover{
     transition: background-color 0.3s ease;
 }
 
-.menu .login-button:hover, .menu .signup-button:hover {
-    background-color:  #1c6920;
+.main .login-button:hover, .main .signup-button:hover {
+    background-color:  #000000;
     color: #fff;
 }
+
 .menu-icon{
     font-size: 35px;
     color: #000000;
     cursor: pointer;
+    z-index: 10001;
     display: none;
 }
-.main {  
-    height: 100vh;
+
+.column {  
+    height: 105vh;
     display: flex;
     flex-wrap: wrap; 
 }
@@ -206,10 +201,52 @@ ul li a:hover{
     font-weight: 300px;
  }
 
- @media only screen and (max-width:786px){
-   .menu{
-    width: auto;
-    height: 40px;
-   }
+ @media screen and(max-width: 1280px){
+    header{
+        padding: 6%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 0px 5;
+        margin: 0px 30px;
+    }
+}
+    @media screen and (max-width: 1090px){
+        .menu-icon{
+            display: block;
+        }
+        .navbar{
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            width: 270px;
+            height: 29vh;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-radius: 10px;
+            transition: none .50s ease;
+        }
+        .navbar a{
+            display: block;
+            margin: 12px 0;
+            padding: 0px 25px;
+            transition: all .50s ease;
+        }
+        .navbar a:hover{
+            color: #689d6a;
+            transform: translate(5px);
+        }
+        .navbar a.active{
+            color: #085d14;
+        }
+        .navbar.open{
+            right: 2%;
+        }
 
- }
+    }
+    
+
+
+ 
