@@ -166,7 +166,8 @@ header{
 
   
 .signup{
-    padding-left: 300px;
+    padding-top: 50px;
+    padding-left: 250px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -175,13 +176,15 @@ header{
     font-size: 15px;
     color: white;
     font-weight: 300px;
+
 }
 #box1{
-    text-align:center;
+    text-align: left;
     position:absolute;
     margin-top: 50px;
     padding: 150px;
     margin-left: 200px;
+    height: 600px;
     background-color: #447247;
     border-radius: 20px;
 }
@@ -190,6 +193,7 @@ header{
  }
 
  .login{
+    padding-top: 50px;
     padding-left: 300px;
     position: relative;
     display: flex;
@@ -246,7 +250,13 @@ header{
         }
 
     }
-    
+   
+    .mainhome{
+        display: flex;
+    }
 
+    .faq{
+        text-align: center;
+    }
 
  
