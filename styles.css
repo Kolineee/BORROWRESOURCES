@@ -308,4 +308,21 @@ p{
         text-align: center;
     }
 
- 
+    .container{
+        text-align: center;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row;  
+     }
+    
+     .boxs{
+        text-align: center;
+        margin-left: 40px;
+        width: 180px;
+        height: 200px;
+        border-radius: 20px;
+        background-color: #84ac90;
+        padding-left: 150px;
+     }
+     
+    
