@@ -275,7 +275,7 @@ p{
         margin: 0px 30px;
     }
 }
-@media screen and (min-width: 290px)and (max-width: 768px) {
+@media screen and (min-width: 320px)and (max-width: 768px) {
     .menu-toggle {
         display: block;
         cursor: pointer;
@@ -358,7 +358,7 @@ p{
         color: #fff;
     }
     .left, .right {
-        width: 100%;
+        width: 110%;
     }
  
 }
