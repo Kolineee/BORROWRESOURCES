@@ -106,14 +106,6 @@ header{
     color: #fff;
 }
 
-.menu-icon{
-    font-size: 35px;
-    color: #000000;
-    cursor: pointer;
-    z-index: 10001;
-    display: none;
-}
-
 .column {  
     height: 105vh;
     display: flex;
@@ -272,7 +264,7 @@ p{
     background-color: #114720;
 }
 
- @media screen and (min-width: 769px)and(max-width: 1200px){
+ @media screen and (min-width: 769px)and(max-width: 1090px){
     header{
         padding: 6%;
         transition: .2s;
@@ -345,6 +337,22 @@ p{
         transition: background-color 0.3s ease-in;
     }
     .main .btn:hover {
+        background-color:  #000000;
+        color: #fff;
+    }
+    .main .login-button, .main .signup-button {
+        padding: 4px 8px;
+        background-color: #fff;
+        text-decoration: none;
+        border: 1px solid #000;
+        border-radius: 10px;
+        font-size: 50%;
+        margin: 0 2.5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .main .login-button:hover, .main .signup-button:hover {
         background-color:  #000000;
         color: #fff;
     }
