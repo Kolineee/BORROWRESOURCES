@@ -272,7 +272,7 @@ p{
     background-color: #114720;
 }
 
- @media screen and(max-width: 1090px){
+ @media screen and (min-width: 769px)and(max-width: 1200px){
     header{
         padding: 6%;
         transition: .2s;
@@ -282,7 +282,7 @@ p{
         margin: 0px 30px;
     }
 }
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 321px)and (max-width: 768px) {
     .menu-toggle {
         display: block;
         cursor: pointer;
