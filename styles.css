@@ -289,21 +289,25 @@ p{
         background-color: #fff;
         margin: 5px 0;
     }
-    
     .navbar {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 270px;
-        height: auto; 
-        background-color: #ffffff;
         display: none; 
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 30%; 
+        height: 30vh;
+        background-color: #243730;
         flex-direction: column;
         justify-content: flex-start;
-        border-radius: 10px;
-        transition: none .50s ease;
+        border-radius: 0;
+        transition: right 0.5s ease; 
+        z-index: 999; 
     }
-    
+
+    .show-navbar {
+        left: 20%;
+    }
+
     .navbar a {
         display: block;
         margin: 12px 0;
