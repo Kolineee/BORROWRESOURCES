@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resource Management System</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet">
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-</head>
+ </head>
 
 </head>
 <body>
   <header>
+     <div class="navbar-container">
+      <div id="menu" class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
   <ul class="navbar">
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="reservation.html">Reservation</a></li>
@@ -23,13 +24,12 @@
     <li><a href="about.html">About</a></li>
     <li><a href="faq.html">FAQ</a></li>
   </ul>
+  </div>
   <div class="main">
     <input class="srch" type="search" name="" placeholder="Search...">
     <a href="#"></a><button class="btn">Search</button></a>
     <a href="login.html" class="login-button">Login</a>
-    <a href="signup.html" class="signup-button">Sign Up</a>
-    <div class="menu-icon">
-      <i class="ri-menu-line menu-icon"></i>
+    <a href="signup.html" class="signup-button">Sign Up</a>    
 </div>
 </header>
 <div class="column">
@@ -52,7 +52,12 @@
   </div>
 </div>
 
-<script type="text/javascript" src="js/script.js"></script>
+<script>
+  function toggleMenu() {
+    var menu = document.querySelector(".navbar");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  }
+</script>
 
 </body>
 </html>

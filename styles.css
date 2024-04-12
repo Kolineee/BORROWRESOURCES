@@ -23,6 +23,24 @@ header{
     padding: 12px ;
     transition: all .50s ease;
 }
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
 .navbar{
     display: flex;
 }
@@ -254,7 +272,7 @@ p{
     background-color: #114720;
 }
 
- @media screen and(max-width: 1280px){
+ @media screen and(max-width: 1090px){
     header{
         padding: 6%;
         transition: .2s;
@@ -264,41 +282,74 @@ p{
         margin: 0px 30px;
     }
 }
-    @media screen and (max-width: 1090px){
-        .menu-icon{
-            display: block;
-        }
-        .navbar{
-            position: absolute;
-            top: 100%;
-            right: -100%;
-            width: 270px;
-            height: 29vh;
-            background-color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            border-radius: 10px;
-            transition: none .50s ease;
-        }
-        .navbar a{
-            display: block;
-            margin: 12px 0;
-            padding: 0px 25px;
-            transition: all .50s ease;
-        }
-        .navbar a:hover{
-            color: #689d6a;
-            transform: translate(5px);
-        }
-        .navbar a.active{
-            color: #085d14;
-        }
-        .navbar.open{
-            right: 2%;
-        }
-
+@media screen and (max-width: 720px) {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 60px;
     }
+    
+    .menu-toggle .bar {
+        width: 20px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+    }
+    
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: auto; 
+        background-color: #ffffff;
+        display: none; 
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: none .50s ease;
+    }
+    
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    
+    .navbar a:hover {
+        color: #689d6a;
+        transform: translate(5px);
+    }
+    
+    .navbar a.active {
+        color: #085d14;
+    }
+    .main .srch {
+        padding: 1.5px;
+        border: .5px solid #fff; 
+        border-radius:2.5px 0 0 2.5px;
+        background: transparent;
+        width: 160px;
+        
+    }
+    
+    .main .btn {
+        margin-right: 50px;
+        padding: 2.5px 5px;
+        background-color: #fff;
+        border: none;
+        border-radius: 0 2.5px 2.5px 0;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in;
+    }
+    .main .btn:hover {
+        background-color:  #000000;
+        color: #fff;
+    }
+}
+
    
     .mainhome{
         display: flex;
