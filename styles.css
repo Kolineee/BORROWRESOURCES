@@ -131,6 +131,7 @@ header{
 
 .centered-content {
     text-align: center;
+    padding-top: 60px;
 }
 
 .centered-content img {
@@ -323,18 +324,18 @@ p{
         border: .5px solid #fff; 
         border-radius:2.5px 0 0 2.5px;
         background: transparent;
-        width: 160px;
-        
+        width: 160px; 
     }
     
     .main .btn {
         margin-right: 50px;
-        padding: 2.5px 5px;
+        padding: 2.5px 6px;
         background-color: #fff;
         border: none;
         border-radius: 0 2.5px 2.5px 0;
         cursor: pointer;
         transition: background-color 0.3s ease-in;
+        font-size: 50%;
     }
     .main .btn:hover {
         background-color:  #000000;
@@ -355,6 +356,14 @@ p{
     .main .login-button:hover, .main .signup-button:hover {
         background-color:  #000000;
         color: #fff;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .column {  
+        height: 105vh;
+        display: flex;
+        flex-wrap: wrap; 
     }
 }
 
