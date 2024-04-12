@@ -265,9 +265,9 @@ p{
     background-color: #114720;
 }
 
- @media screen and (min-width: 769px)and(max-width: 1090px){
+ @media screen and (min-width: 901)and(max-width: 1200px){
     header{
-        padding: 6%;
+        padding: 4%;
         transition: .2s;
     }
     .navbar a{
@@ -275,7 +275,7 @@ p{
         margin: 0px 30px;
     }
 }
-@media screen and (min-width: 320px)and (max-width: 768px) {
+@media screen and (min-width: 320px)and (max-width: 900px) {
     .menu-toggle {
         display: block;
         cursor: pointer;
