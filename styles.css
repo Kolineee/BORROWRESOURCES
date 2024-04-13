@@ -20,7 +20,7 @@ header{
     justify-content: space-between;
     background: linear-gradient(to right, #689d6a,  #1c6920,#114720);
     color: #fff;
-    padding: 12px ;
+    padding: 8px ;
     transition: all .50s ease;
 }
 .navbar-container {
@@ -438,3 +438,90 @@ p{
     margin-bottom: 40px;
     margin-top: 40px;
  }
+ .icons{
+   display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2px 0;
+   margin-left: 30px;
+   margin-right: 10px;
+ }
+ .fa-regular{
+   
+    font-size: 17px;
+    color: white;
+    margin-right: 20px;
+ }
+ .user-pic{
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+ }
+ .sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+ }
+ .sub-menu-wrap.open-menu{
+    max-height: 400px;
+
+ }
+ .user-info img{
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 15px;
+ }
+ .sub-menu{
+    background:#243730;
+    padding: 20px;
+    margin: 10px;
+ }
+ .user-info{
+    display: flex;
+    align-items: center;
+ }
+ .user-info h3{
+    font-weight: 500;
+ }
+ .sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+ }
+ .sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 3px 0;
+    
+ }
+ .sub-menu-link p{
+    width: 100%;
+    margin-left: 2px;
+    text-align: justify;
+ }
+.sub-menu-link img{
+    width: 40px;
+    background: rgb(226, 222, 222);
+    border-radius: 50%;
+    padding: 6px;
+    margin-right: 12px;
+}
+.sub-menu-link span{
+    font-size: 18px;
+    transition: transform 0.5s;
+}
+.sub-menu-link span:hover {
+    transform: translateX(5px);
+}
+.sub-menu-link p:hover {
+    font-weight: 550;
+}
+ 
