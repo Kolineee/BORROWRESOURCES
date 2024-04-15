@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
 }
+section{ height: 100vh;}
 body{
     min-height: 100vh;
 }
@@ -514,4 +515,56 @@ p{
 .sub-menu-link p:hover {
     font-weight: 550;
 }
- 
+
+.sec1{
+    background-color: #d1e3d6;
+}
+
+#user{
+    padding-top: 30px;
+    height: 220px;
+    width: 200px;
+}
+
+.content{
+    padding-bottom: 200px;
+}
+
+.history-button{
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    background-color: #c5bbbb;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sechist{
+    background-color: #d1e3d6;
+}
+.hh1{text-align: center;}
+.boxx{
+    display: flex;
+    padding-top: 150px;
+}
+
+.logsec{
+    background-color: #d1e3d6;
+}
+.pp{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.yes{
+    margin-left: 660px;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    background-color: #c5bbbb;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

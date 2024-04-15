@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resource Management System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+  <div class="navbar-container">
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+  <ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="./main_reservation.html">Reservation</a></li>
+    <li><a href="./main_available.html">Available</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+    <li><a href="./main_about.html">About</a></li>
+    <li><a href="./main_faq.html">FAQ</a></li>
+  </ul>
+ </div>
+  <div class="main">
+    <input class="srch" type="search" name="" placeholder="Search...">
+    <a href="#"></a><button class="btn">Search</button></a>
+  </div>
+  <div class="icons">
+    <i class="fa-regular fa-bell"></i>
+    <img src="./pfp.png" class="user-pic" onclick="toggleMenu2()">
+    <div class="sub-menu-wrap" id="subMenu">
+      <div class="sub-menu">
+        <div class="user-info">
+          <img src="./pfp.png" alt="pfp">
+          <h3>Calista Perez</h3>
+        </div>
+        <hr>
+        <a href="profile.html" class="sub-menu-link">
+          <img src="./user.png" alt="user">
+          <p>Profile</p>
+          <span>></span>
+        </a>
+        <a href="setting.html" class="sub-menu-link">
+          <img src="./settings.png" alt="settings">
+          <p>Settings</p>
+          <span>></span>
+        </a>
+        <a href="help&support.html" class="sub-menu-link">
+          <img src="./help-&-Support.png" alt="h&s">
+          <p>Help & Support</p>
+          <span>></span>
+        </a>
+        <a href="logout.html" class="sub-menu-link">
+          <img src="./logout.png" alt="Logout">
+          <p>Logout</p>
+          <span>></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<br><br><br>
+reservation history
