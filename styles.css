@@ -204,9 +204,6 @@ h1 {
     font-size: 40px;
     margin: 0; /* Remove default margin */
 }
-0px;
-    margin: 0; /* Remove default margin */
-}
 
  .login{
     padding-top: 50px;
@@ -717,3 +714,71 @@ p{
 .sechist{
     background-color: #d1e3d6;
 }
+
+.setting-sec{
+    text-align: center;
+    height: max-content;
+    background-color: #d1e3d6;
+   
+}
+
+.setting-container {
+    background-color: rgb(188, 189, 188);
+    width: 12.5%; /* 1/8 of the screen */
+    height: 100%;
+    margin-top: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+  }
+
+  .setting,
+  .account,
+  .notification,
+  .privacy,
+  .terms,
+  .feedback {
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  .setting {
+    margin-top: 50px;
+  }
+  
+  .account{
+    margin-top: 70px;
+  }
+  
+  .notification{
+    margin-top: 90px;
+  }
+  .navigation {
+    background-color: #333; /* Background color of the navigation bar */
+  }
+  
+  .navigation ul {
+    list-style-type: none; /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation li {
+    display: block; /* Display list items vertically */
+  }
+  
+  .navigation li a {
+    display: block; /* Make anchor tags behave as blocks */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding inside each link */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .navigation li a:hover {
+    background-color: #555; /* Background color on hover */
+  }
+
+  .setting-info{
+    
+    margin-left: 300px;
+  }
