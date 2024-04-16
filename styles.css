@@ -230,14 +230,14 @@ h1 {
 
     }
  }
- main{
+ .faqq{
     margin-top: 100px; /*FAQ*/
     text-align: center;
  }
  h1{
     color: white;
     margin-bottom: 20px;
-
+    display: flex;
 }
  .sec1{
     display: flex;
