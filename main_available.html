@@ -32,7 +32,11 @@
     <a href="#"></a><button class="btn">Search</button></a>
   </div>
   <div class="icons">
-    <i class="fa-regular fa-bell"></i>
+    <i class="far fa-bell bell-icon" id="bellIcon" onclick="toggleNotification()"></i>
+    <div class="notification-box" id="notificationBox">
+      <h2>Notifications</h2>
+    <p>No new notifications!</p>
+  </div>
     <img src="./pfp.png" class="user-pic" onclick="toggleMenu2()">
     <div class="sub-menu-wrap" id="subMenu">
       <div class="sub-menu">
@@ -68,12 +72,7 @@
 
 
   <script src="script.js"></script>
-  <script>
-    let subMenu = document.getElementById("subMenu");
-
-    function toggleMenu2(){
-      subMenu.classList.toggle("open-menu");
-    }
+ 
 </script>
 </body>
 </html>

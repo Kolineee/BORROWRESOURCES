@@ -10,7 +10,7 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+
   <header>
   <div class="navbar-container">
       <div class="menu-toggle" onclick="toggleMenu()">
@@ -32,7 +32,11 @@
     <a href="#"></a><button class="btn">Search</button></a>
   </div>
   <div class="icons">
-    <i class="fa-regular fa-bell"></i>
+    <i class="far fa-bell bell-icon" id="bellIcon" onclick="toggleNotification()"></i>
+    <div class="notification-box" id="notificationBox">
+      <h2>Notifications</h2>
+    <p>No new notifications!</p>
+  </div>
     <img src="./pfp.png" class="user-pic" onclick="toggleMenu2()">
     <div class="sub-menu-wrap" id="subMenu">
       <div class="sub-menu">
@@ -65,15 +69,70 @@
     </div>
   </div>
 </header>
+<body class="lgreen"></body>
+
+<div class="Cbox">
+  <h2 class="textc">Contact Us</h2>
+  </div>
+<div class="contact_container">
+  <div class="contact-section">
+    <p class="green">Have any questions? Send us a message!</p>
+    <form class="form" action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telephone">Telephone</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="Telephone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="E-mail address" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">By Clicking Submit, you agree to our Customer Care Privacy Policy</label>
+      </div>
+
+      <input type="submit" value="Submit" class="submit-btn">
+    </form>
+  </div>
+
+  <div class="contact-details">
+    <h3>Contact Details</h3>
+    <p>If you have any questions, feedback, or need support, please feel free to contact us:</p>
+    <p>Email: borrowresource@email.com</p>
+    <p>Phone: +1234567890</p>
+    <p>By contacting us, you agree to our Customer Care Privacy Policy.</p>
+  </div>
+
+  <div class="social-media">
+    <h3>Follow us!</h3>
+    <p>Your Social Media Platform</p>
+    <p>@BorrowResource</p>
+    <p>@ResourceResevation</p>
+  
+  </div>
+</div>
+
 
 
   <script src="script.js"></script>
-  <script>
-    let subMenu = document.getElementById("subMenu");
 
-    function toggleMenu2(){
-      subMenu.classList.toggle("open-menu");
-    }
 </script>
 </body>
 </html>

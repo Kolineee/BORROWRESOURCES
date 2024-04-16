@@ -445,13 +445,36 @@ p{
    margin-left: -100px;
    margin-right: 10px;
  }
- .fa-regular{
-   
-    font-size: 17px;
-    color: white;
-    margin-right: 20px;
- }
- .user-pic{
+
+ .bell-icon { /*BELLICON*/
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 16px;
+    color: #ffffff;
+  }
+
+  .notification-box {
+    position: absolute;
+    top: 50px;
+    right: 10;
+    width: 300px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #ddeae3;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .notification-box:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 38px;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+  }
+ .user-pic{ /*profile BAR*/
     width: 25px;
     border-radius: 50%;
     cursor: pointer;
