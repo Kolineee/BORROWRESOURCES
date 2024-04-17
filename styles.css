@@ -788,3 +788,39 @@ p{
     
     margin-left: 300px;
   }
+.SrchH{
+    
+    background: linear-gradient(to right, #085d14, #008000);
+    width: 100%;
+    height: 30%;
+
+  
+}
+.SrchH a{
+    color: #189d47;
+    font-size: 1.0rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.SrchH .srch {
+    padding: 3px;
+    border: 1px solid #000000; 
+    border-radius:5px 0 0 5px;
+    background: transparent;
+    width: 220px;
+    
+}
+
+.SrchH .btn {
+    margin-right: 100px;
+    padding: 5px 10px;
+    background-color: #55587a;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+.SrchH .btn:hover {
+    background-color:  #000000;
+    color: #fff;
+}
