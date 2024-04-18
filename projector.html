@@ -116,14 +116,70 @@
       <button class="dropbtn">AUDITORIUM</button>
       <div class="dropdown-content">
         <a href="auditorium.html">CCS Auditorium</a>
-       
       </div>
     </div>
   </div>
 </section>
 
 <section class="projector-section">
-    <br><br>
-    <h2>Projector</h2>
-    
+  
+    <h2>Projector Availability - Monday</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time Slot</th>
+      <th>Projector 1 Availability</th>
+      <th>Projector 2 Availability</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7:00 AM - 9:00 AM</td>
+      <td>Available</td>
+      <td>Available</td>
+      <td><button id="btn1" class="reserve-button" onclick="reserve('btn1', '7:00 AM - 9:00 AM')">Reserve</button></td>
+    </tr>
+    <tr>
+      <td>9:00 AM - 11:00 AM</td>
+      <td>Available</td>
+      <td>Available</td>
+      <td><button id="btn2" class="reserve-button" onclick="reserve('btn2', '9:00 AM - 11:00 AM')">Reserve</button></td>
+    </tr>
+    <tr>
+      <td>11:00 AM - 1:00 PM</td>
+      <td>Not Available</td>
+      <td>Not Available</td>
+      <td class="na-text">N/A</td>
+    </tr>
+    <tr>
+      <td>1:00 PM - 3:00 PM</td>
+      <td>Not Available</td>
+      <td>Not Available</td>
+      <td class="na-text">N/A</td>
+    </tr>
+    <tr>
+      <td>3:00 PM - 5:00 PM</td>
+      <td>Available</td>
+      <td>Available</td>
+      <td><button id="btn3" class="reserve-button" onclick="reserve('btn3', '3:00 PM - 5:00 PM')">Reserve</button></td>
+    </tr>
+    <tr>
+      <td>5:00 PM - 7:00 PM</td>
+      <td>Available</td>
+      <td>Available</td>
+      <td><button id="btn4" class="reserve-button" onclick="reserve('btn4', '5:00 PM - 7:00 PM')">Reserve</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="notification" class="notification">
+  <h3>Reservation Successful</h3>
+  <p id="reserved-time"></p>
+</div>
+ <script src="script.js"></script>
+ 
 </section>
+</body>
+</html>
