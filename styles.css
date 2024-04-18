@@ -930,6 +930,7 @@ p{
 }
 
 .pbh1 {
+  margin-top: 0%;
   margin-bottom: 30px;
   margin-right: 25px;
   margin-left: 10px;
@@ -1044,4 +1045,21 @@ p{
 /* Section styles */
 .setting-sec2 {
   padding: 20px;
+}
+
+.notif-setting{
+  h2{margin-left: 650px;}
+}
+
+/*projector*/
+.projector-section{
+  text-align: center;
+  background-color: rgb(221, 250, 221);
+}
+
+/*help&support*/
+.helpsupport-sec{
+  height: max-content;
+  text-align: center;
+ background-color: rgb(224, 245, 224);
 }

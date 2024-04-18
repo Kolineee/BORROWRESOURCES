@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resource Management System</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
@@ -22,7 +22,7 @@
     <li><a href="./home.html">Home</a></li>
     <li><a href="./main_reservation.html">Reservation</a></li>
     <li><a href="./main_available.html">Available</a></li>
-    <li><a href="./main_contact.html">Contact</a></li>
+    <li><a href="./contact.html">Contact</a></li>
     <li><a href="./main_about.html">About</a></li>
     <li><a href="./main_faq.html">FAQ</a></li>
   </ul>
@@ -45,22 +45,23 @@
           <h3>Calista Perez</h3>
         </div>
         <hr>
-        <a href="#" class="sub-menu-link">
+        <a href="profile.html" class="sub-menu-link">
           <img src="./user.png" alt="user">
           <p>Profile</p>
           <span>></span>
         </a>
-        <a href="#" class="sub-menu-link">
+        
+        <a href="Settings.html" class="sub-menu-link">
           <img src="./settings.png" alt="settings">
           <p>Settings</p>
           <span>></span>
         </a>
-        <a href="#" class="sub-menu-link">
+        <a href="help&support.html" class="sub-menu-link">
           <img src="./help-&-Support.png" alt="h&s">
           <p>Help & Support</p>
           <span>></span>
         </a>
-        <a href="#" class="sub-menu-link">
+        <a href="logout.html" class="sub-menu-link">
           <img src="./logout.png" alt="Logout">
           <p>Logout</p>
           <span>></span>
@@ -71,41 +72,53 @@
 </header>
 
 
-
-  <script src="script.js"></script>
- 
-</script>
-
-<section class="setting-sec">
-      <div class="setting-container">
-        <div class="box" id="setting-b1">
-          <nav class="navigation">
-            <ul>
-              <br><br><h2>Setting</h2>
-              <li><a href="Settings.html">Setting</a></li>
-              <li><a href="account.html">Account</a></li>
-              <li><a href="notification.html">Notification</a></li>
-              <li><a href="privacy.html">Privacy</a></li>
-              <li><a href="terms.html">Terms and Privacy Policy</a></li>
-              <li><a href="feedback.html">Feedback</a></li>   
-          </nav>   
-        </div>
+<section class="home">
+  <h2 class="homeh1">BORROW RESOURCES</h2>
+  <div class="HomeIcons">
+    <div class="dropdown">
+      <div class="icon-container">
+        <img src="./equipment.png" alt="Equipment" class="icon1">
       </div>
-      
-      <div class="notif-setting">
-        <br><br>
-        <h1>Notification</h1>
-        <div class="notif-channel">
-            <h3>Receive notification:</h3>
-            <p>Email</p>
-            <p>Phone Number(sms)</p>
-        </div>
-        <div class="notif-types">
-
-        </div>
+      <button class="dropbtn">EQUIPMENT</button>
+      <div class="dropdown-content">
+        <a href="projector.html">Projector</a>
+        <a href="HDMI.html">HDMI</a>
+        <a href="TV.html">TV</a>
+        <a href="whiteboard.html">Whiteboard</a>
       </div>
-   
+    </div>
+    <div class="dropdown">
+      <div class="icon-container">
+        <img src="./comlab.png" alt="Laboratory" class="icon1">
+      </div>
+      <button class="dropbtn">Laboratory</button>
+      <div class="dropdown-content">
+        <a href="lab1.html">Lab 1</a>
+        <a href="lab2.html">Lab 2</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="icon-container">
+        <img src="./room.png" alt="Room" class="icon1">
+      </div>
+      <button class="dropbtn">ROOM</button>
+      <div class="dropdown-content">
+        <a href="lec1.html">Lec 1</a>
+        <a href="lec2.html">Lec 2</a>
+        <a href="lec3.html">Lec 3</a>
+        <a href="lec4.html">Lec 4</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="icon-container">
+        <img src="./auditorium.png" alt="Auditorium" class="icon1">
+      </div>
+      <button class="dropbtn">AUDITORIUM</button>
+      <div class="dropdown-content">
+        <a href="auditorium.html">CCS Auditorium</a>
+       
+      </div>
+    </div>
+  </div>
+  <H1 style="color: white;">lab1</H1>
 </section>
-
-</body>
-</html>
