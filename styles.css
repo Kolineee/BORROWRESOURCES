@@ -702,9 +702,10 @@ p{
 }
 
 .setting-sec{
+  h1{margin-left: 200px;}
     text-align: center;
     height: max-content;
-    background-color: #d1e3d6;
+    background-color: #bedac6;
    
 }
 
@@ -900,6 +901,7 @@ p{
 .dropdown-content a:hover {
   background-color: #ccffcc;
 }
+<<<<<<< HEAD
 .pb{ /*Borrowed*/
   width: 100%;
   height: 35vh;
@@ -966,4 +968,65 @@ p{
   width: 100%;
   height: 50vh;
   background-color:  #114720;;
+=======
+
+/*Setting-account*/
+.prof-info{
+  
+  padding-left: 350px;
+  text-align: left;
+  letter-spacing: 3px;
+  margin-top: 30px;
+}
+
+.profile-box{
+ margin-left: 400px;
+  display: flex;
+  height: inherit;
+ width: fit-content;
+ background-color: rgb(200, 196, 196);
+}
+
+.editprofile-button{
+  border-radius: 15px;
+  height: 30px;
+  width: 200px;
+  background-color: gradient rgb(210, 209, 209);
+}
+.password-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns flex items to the end of the container (right side) */
+}
+
+.setting-sec1{
+  h1{margin-left: 200px;}
+    text-align: center;
+    height: max-content;
+    background-color: #bedac6;
+   height: 400px;
+}
+.setting-sec2{
+  background-color: #73937c;
+  h2{margin-left: 650px;}
+}
+.add-account-button,
+.changepass-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Hover effect */
+.add-account-button:hover,
+.changepass-button:hover {
+  background-color: #45a049;
+}
+
+/* Section styles */
+.setting-sec2 {
+  padding: 20px;
+>>>>>>> d388ff776210700011b35a5cbd98baf21947eff5
 }
