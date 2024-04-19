@@ -20,7 +20,7 @@
       </div>
   <ul class="navbar">
     <li><a href="./home.html">Home</a></li>
-    <li><a href="./main_reservation.html">Reservation</a></li>
+    <li><a href="./reservation.html">Reservation</a></li>
     <li><a href="./main_available.html">Available</a></li>
     <li><a href="./contact.html">Contact</a></li>
     <li><a href="./main_about.html">About</a></li>
@@ -120,5 +120,66 @@
       </div>
     </div>
   </div>
-  <h1 style="color: white;">auditorium</h1>
+
+</section>
+
+<section class="projector-section">
+  
+  <h2>Auditorium Availability - Monday</h2>
+
+<table>
+<thead>
+  <tr>
+    <th>Time Slot</th>
+    <th>Auditorium Availability</th>
+   
+    <th>Action</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>7:00 AM - 9:00 AM</td>
+    <td>Available</td>
+ 
+    <td><button id="btn1" class="reserve-button" onclick="reserve('btn1', '7:00 AM - 9:00 AM')">Reserve</button></td>
+  </tr>
+  <tr>
+    <td>9:00 AM - 11:00 AM</td>
+    <td>Available</td>
+  
+    <td><button id="btn2" class="reserve-button" onclick="reserve('btn2', '9:00 AM - 11:00 AM')">Reserve</button></td>
+  </tr>
+  <tr>
+    <td>11:00 AM - 1:00 PM</td>
+    <td>Not Available</td>
+ 
+    <td class="na-text">N/A</td>
+  </tr>
+  <tr>
+    <td>1:00 PM - 3:00 PM</td>
+    <td>Not Available</td>
+  
+    <td class="na-text">N/A</td>
+  </tr>
+  <tr>
+    <td>3:00 PM - 5:00 PM</td>
+    <td>Available</td>
+
+    <td><button id="btn3" class="reserve-button" onclick="reserve('btn3', '3:00 PM - 5:00 PM')">Reserve</button></td>
+  </tr>
+  <tr>
+    <td>5:00 PM - 7:00 PM</td>
+    <td>Available</td>
+ 
+    <td><button id="btn4" class="reserve-button" onclick="reserve('btn4', '5:00 PM - 7:00 PM')">Reserve</button></td>
+  </tr>
+</tbody>
+</table>
+
+<div id="notification" class="notification">
+<h3>Reservation Successful</h3>
+<p id="reserved-time"></p>
+</div>
+<script src="script.js"></script>
+
 </section>
