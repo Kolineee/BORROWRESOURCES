@@ -918,7 +918,7 @@ p{
 .dropdown-content a:hover {
   background-color: #ccffcc;
 }
-<<<<<<< HEAD
+
 .pb{ /*Borrowed*/
   width: 100%;
   height: 35vh;
@@ -1096,6 +1096,21 @@ tr:nth-child(even) {
 }
 .notification {
   position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+  max-width: 400px;
+  text-align: center;
+}
+
+.notification.success {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1108,6 +1123,7 @@ tr:nth-child(even) {
   max-width: 400px;
   text-align: center;
 }
+
 .notification.success {
   position: fixed;
   top: 50%;
@@ -1129,6 +1145,67 @@ tr:nth-child(even) {
   margin-bottom: 10px;
 }
 
+/*REsevation */
+.reservation{
+  text-align: center;
+  background-color: rgb(124, 159, 124);
+  height: 110vh;
+}
+.borrowed-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notification-resources {
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color:  #f2f2f2;
+  margin: 15% auto;
+  padding: 15px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logButton {
+  background-color: rgb(95, 163, 95);
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #054e37;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 /*help&support*/
 .helpsupport-sec{

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resource Management System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="available.html" class="active">Available</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="main">
+      <input class="srch" type="search" name="" placeholder="Search...">
+      <a href="#"></a><button class="btn">Search</button></a>
+      <a href="login.html" class="login-button">Login</a>
+      <a href="signup.html" class="signup-button">Sign Up</a>
+      <div class="menu-icon">
+        <i class="ri-menu-line menu-icon"></i>
+  </div>
+  </header>
+  <section>
+     
+
+<section class="reservation">
+  
+  <h2>Availability - Monday</h2>
+
+<table>
+<thead>
+  <tr>
+    <th>Time Slot</th>
+    <th>Day</th>
+    <th>Resources</th>
+    <th>Availability</th> 
+    <th>Action</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>7:00 AM - 9:00 AM</td>
+    <td>Monday</td>
+    <td>HDMI</td>
+    <td>Available</td>
+    <td><button id="btn1" class="reserve-button" onclick="borrow('btn1', '7:00 AM - 9:00 AM')">Reserve</button></td>
+  </tr>
+  <tr>
+    <td>9:00 AM - 11:00 AM</td>
+    <td>Monday</td>
+    <td>Projector 2</td>
+    <td>Available</td>
+    <td><button id="btn2" class="reserve-button" onclick="borrow('btn2', '9:00 AM - 11:00 AM')">Reserve</button></td>
+  </tr>
+  
+  <tr>
+    <td>3:00 PM - 5:00 PM</td>
+    <td>Tuesday</td>
+    <td>Lecture 1</td>
+    <td>Available</td>
+    <td><button id="btn3" class="reserve-button" onclick="borrow('btn3', '3:00 PM - 5:00 PM')">Reserve</button></td>
+  </tr>
+  <tr>
+    <td>3:00 PM - 5:00 PM</td>
+    <td>wednesday</td>
+    <td>Lecture 1</td>
+    <td>Available</td>
+    <td><button id="btn3" class="reserve-button" onclick="borrow('btn3', '3:00 PM - 5:00 PM')">Reserve</button></td>
+  </tr>
+  <tr>
+    <td>5:00 PM - 7:00 PM</td>
+    <td>Wednesday</td>
+    <td>Lecture 4</td>
+    <td>Available</td>
+    <td><button id="btn4" class="reserve-button" onclick="borrow('btn4', '5:00 PM - 7:00 PM')">Reserve</button></td>
+  </tr>
+  <td>7:00 AM - 9:00 AM</td>
+  <td>Thursday</td>
+    <td>HDMI</td>
+    <td>Available</td>
+    <td><button id="btn1" class="reserve-button" onclick="borrow('btn1', '7:00 AM - 9:00 AM')">Reserve</button></td>
+  </tr>
+  <tr>
+    <td>9:00 AM - 11:00 AM</td>
+    <td>Thursday</td>
+    <td>Projector 2</td>
+    <td>Available</td>
+    <td><button id="btn2" class="reserve-button" onclick="borrow('btn2', '9:00 AM - 11:00 AM')">Reserve</button></td>
+  </tr>
+  <tr>
+    <td>7:00 AM - 9:00 AM</td>
+  <td>Friday</td>
+    <td>HDMI</td>
+    <td>Available</td>
+    <td><button id="btn1" class="reserve-button" onclick="borrow('btn1', '7:00 AM - 9:00 AM')">Reserve</button></td>
+  </tr>
+  <tr>
+    <td>9:00 AM - 11:00 AM</td>
+    <td>Friday</td>
+    <td>Projector 2</td>
+    <td>Available</td>
+    <td><button id="btn2" class="reserve-button" onclick="borrow('btn2', '9:00 AM - 11:00 AM')">Reserve</button></td>
+  </tr>
+  <tr>
+    <td>9:00 AM - 11:00 AM</td>
+    <td>Saturday</td>
+    <td>Projector 2</td>
+    <td>Available</td>
+    <td><button id="btn2" class="reserve-button" onclick="borrow('btn2', '9:00 AM - 11:00 AM')">Reserve</button></td>
+  </tr>
+  <tr>
+</tbody>
+</table>
+
+
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>You need to login to reserve a resource.</p>
+    <button class="logButton" id="loginButton">Login</button>
+  </div>
+</div>
+<script src="script.js"></script>
+
+</section>
+
+
+  </body>
+</html>
