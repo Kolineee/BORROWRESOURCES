@@ -70,22 +70,57 @@
   </div>
 </header>
 
-<section class="sec">
-  <div class="pfpbox" id="profile-box">
-   <h2>Recent Reservations</h2>
-  </div>  
-  <img src="./pfp.png" id="user">
-        <div class="content">
-          <br>
-            <div class="uname"><strong>Username:</strong> Calista Perez</div><br>
-            <div class="role"><strong> Role:</strong> Student</div><br>
-            <div class="snumber"><strong>Student number:</strong> 202205480</div><br>
-            <div class="course"><strong>Course:</strong> Bachelor of Science in Computer Science</div><br>
-            <div class="y&s"><strong>Year & Section:</strong> 2nd year C</div><br><br> 
+<section class="section-profile">
+  <img src="pfp.png" id="pfp-user-profile">
+  <div class="content">
+    <br>
+      <div class="uname"><strong>Username:</strong> Calista Perez</div><br>
+      <div class="role"><strong> Role:</strong> Student</div><br>
+      <div class="snumber"><strong>Student number:</strong> 202205480</div><br>
+      <div class="course"><strong>Course:</strong> Bachelor of Science in Computer Science</div><br>
+      <div class="y&s"><strong>Year & Section:</strong> 2nd year C</div>             
+ 
+  <h1>Borrowed History</h1><br>
+<table>
+<thead>
+  <tr>
+    <th>Time start</th>
+    <th>Time end</th>
+    <th>resources</th>
+    <th>Action</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>7:00 AM</td>
+    <td>9:00 AM</td>
+    <td>Projector 1</td>
+    <td><button id="btn1" class="reserve-button" onclick="reserve('btn1', '7:00 AM - 9:00 AM')">Reserve</button></td>
+  </tr>
+  <tr>
+    <td>9:00 AM </td>
+    <td>11:00 AM</td>
+    <td>Laboratory 1</td>
+    <td cla="Return-txt">Returned</button></td>
+  </tr>
+  <tr>
+    <td>11:00 AM</td>
+    <td>1:00 PM</td>
+    <td>TV</td>
+    <td class="return-txt">Returned</td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div id="notification" class="notification">
+<h3>Return Successful</h3>
+<p id="reserved-time"></p>
+</div>
+<script src="profile.js"></script>
 
-               
-        </div>
-</section> 
+</section>
+
+
 <<<<<<< HEAD
 <script src="script.js"></script>
 </body>

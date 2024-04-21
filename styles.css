@@ -1213,3 +1213,31 @@ tr:nth-child(even) {
   text-align: center;
  background-color: rgb(224, 245, 224);
 }
+
+/*profile
+*/
+
+.section-profile{
+  height: 50%;
+  padding-top: 100px;
+  background-color: #c2e0c9;
+  text-align: center;
+}
+
+#pfp-user-profile{
+  height: 150px;
+  width: 150px;
+}
+
+.return-button {
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: green;
+}
+

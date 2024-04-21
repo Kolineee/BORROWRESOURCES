@@ -13,9 +13,10 @@ function toggleNotification() {
     notificationBox.style.display = notificationBox.style.display === "none" ? "block" : "none";
 }
 
-//Para functinable ang mga notif
-var hasReserved = false;
-var notificationTimeout;
+
+/* para sa return sa history profile*/
+let hasReserved = false;
+let notificationTimeout;
 
 function reserve(buttonId, timeSlot) {
   if (hasReserved) {
@@ -43,25 +44,15 @@ function reserve(buttonId, timeSlot) {
   hasReserved = true;
 
   // Display success message in notification
-  showNotification('Reservation Successful', 'Reserved time: ' + timeSlot);
+  showNotification('Returned Successful', 'Returned time: ' + endTime);
 }
 
-
-// ERROR
 function showAlert(message) {
   var notification = document.getElementById('notification');
-  var notificationTitle = notification.querySelector('h3');
   var notificationMessage = notification.querySelector('p');
 
-  notificationTitle.textContent = 'Error';
   notificationMessage.textContent = message;
   notification.style.display = 'block';
-
-  // Disable all reserve buttons
-  var reserveButtons = document.querySelectorAll('.reserve-button');
-  reserveButtons.forEach(function(button) {
-    button.disabled = true;
-  });
 
   // Clear previous timeout if exists
   if (notificationTimeout) {
@@ -71,13 +62,9 @@ function showAlert(message) {
   // Hide the notification after 5 seconds
   notificationTimeout = setTimeout(function() {
     notification.style.display = 'none';
-    // Enable all reserve buttons after hiding the notification
-    reserveButtons.forEach(function(button) {
-      button.disabled = false;
-    });
   }, 5000); // 5000 milliseconds = 5 seconds
 }
-//Succesful
+
 function showNotification(title, message) {
   var notification = document.getElementById('notification');
   var notificationTitle = notification.querySelector('h3');
@@ -98,36 +85,3 @@ function showNotification(title, message) {
     hasReserved = false; // Reset reservation status
   }, 5000); // 5000 milliseconds = 5 seconds
 }
-
-// reserve button click
-function borrow(timeSlot) {
-  var isLoggedIn = checkLoginStatus();
-
-  if (!isLoggedIn) {
-    var modal = document.getElementById("loginModal");
-    modal.style.display = "block";
-    var closeButton = document.getElementsByClassName("close")[0];
-    closeButton.onclick = function() {
-      modal.style.display = "none";
-    }
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-    var loginButton = document.getElementById("loginButton");
-    loginButton.onclick = function() {
- 
-      window.location.href = "login.html";
-    }
-  } else {
-   console.log("Resource reserved for: " + timeSlot);
-  }
-}
-function checkLoginStatus() {
-    return false;
-}
-
-
-
-
