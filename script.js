@@ -54,13 +54,13 @@ function toggleNotification() {
   // Function to cancel a reservation
   function cancelReservation(buttonId, timeSlot) {
     var button = document.getElementById(buttonId);
-    var cancelButton = document.getElementById('cancel' + buttonId.slice(3)); // Get the cancel button
-    cancelButton.style.display = 'none'; // Hide the cancel button
-    button.textContent = 'Reserve'; // Change the button text back to Reserve
-    button.classList.remove('reserved'); // Remove the reserved class
-    button.disabled = false; // Enable the button
-    hasReserved = false; // Update reservation status
-    showNotification('Reservation Cancelled', 'Cancelled time: ' + timeSlot); // Show cancellation notification
+    var cancelButton = document.getElementById('cancel' + buttonId.slice(3)); 
+    cancelButton.style.display = 'none'; 
+    button.textContent = 'Reserve'; 
+    button.classList.remove('reserved'); 
+    button.disabled = false; 
+    hasReserved = false; 
+    showNotification('Reservation Cancelled', 'Cancelled time: ' + timeSlot);
     setTimeout(function() {
       var notification = document.getElementById('notification');
       notification.style.display = 'none';
@@ -95,7 +95,7 @@ function toggleNotification() {
       reserveButtons.forEach(function(button) {
         button.disabled = false;
       });
-    }, 5000); // 5000 milliseconds = 5 seconds
+    }, 5000); // 5 seconds
   }
 
   // Function to show success notification

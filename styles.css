@@ -1081,14 +1081,16 @@ p{
 .bttn {
   background-color: green;
   color: white;
-  padding: 11px 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease; 
+  
 }
 
 .bttn:hover {
@@ -1099,15 +1101,10 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px; 
+  margin-top:30px; 
+  margin-bottom: 40px;
 }
 
-.searchh-input {
-  flex-grow: 1;
-  padding: 10px;
-  border: 1px solid #147630;
-
-}
 
 .searchh-bttn {
   background-color: green;
@@ -1117,8 +1114,8 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 12px;
-  border-radius: 0 5px 5px 0;
+  margin-bottom: 6px;
+  border-radius: 5px;
   margin-left: 0;
   cursor: pointer;
   transition: transform 0.2s ease; 
@@ -1162,6 +1159,7 @@ p{
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 20px;
 }
 th, td {
   border: 1px solid #ddd;
@@ -1200,7 +1198,7 @@ tr:nth-child(even) {
   text-decoration: none;
   display: none; 
   font-size: 14px;
-  margin: 4px 2px;
+  margin-top: 20px;
   cursor: pointer;
   border-radius: 4px;
   background-color: red;
