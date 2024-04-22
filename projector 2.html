@@ -81,7 +81,8 @@
       </div>
       <button class="dropbtn">EQUIPMENT</button>
       <div class="dropdown-content">
-        <a href="projector.html">Projector</a>
+        <a href="projector 1.html">Projector 1</a>
+        <a href="projector 2.html">Projector 2</a>
         <a href="HDMI.html">HDMI</a>
         <a href="TV.html">TV</a>
         <a href="whiteboard.html">Whiteboard</a>
@@ -93,7 +94,8 @@
       </div>
       <button class="dropbtn">Laboratory</button>
       <div class="dropdown-content">
-        <a href="lab1.html">Laboratory Room</a>
+        <a href="lab1.html">Lab 1</a>
+        <a href="lab1.html">Lab 2</a>
         
       </div>
     </div>
@@ -140,13 +142,12 @@
     </div>
 </div>
   
-    <h2>Projector Availability - Monday</h2>
+    <h2>Projector 2 Availability - Monday</h2>
 
 <table>
   <thead>
     <tr>
       <th>Time Slot</th>
-      <th>Projector 1 Availability</th>
       <th>Projector 2 Availability</th>
       <th>Action</th>
     </tr>
@@ -155,38 +156,39 @@
     <tr>
       <td>7:00 AM - 9:00 AM</td>
       <td>Available</td>
-      <td>Available</td>
+  
       <td><button id="btn1" class="reserve-button" onclick="reserve('btn1', '7:00 AM - 9:00 AM')">Reserve</button></td>
+      <button id="cancel1" class="cancel-button" onclick="cancelReservation('btn1', '7:00 AM - 9:00 AM')">Cancel</button>
     </tr>
     <tr>
       <td>9:00 AM - 11:00 AM</td>
       <td>Available</td>
-      <td>Available</td>
-      <td><button id="btn2" class="reserve-button" onclick="reserve('btn2', '9:00 AM - 11:00 AM')">Reserve</button></td>
+      <td><button id="btn1" class="reserve-button" onclick="reserve('btn1', '9:00 AM - 11:00 AM')">Reserve</button></td>
+      <button id="cancel1" class="cancel-button" onclick="cancelReservation('btn1', '9:00 AM - 11:00 AM')">Cancel</button>
     </tr>
     <tr>
       <td>11:00 AM - 1:00 PM</td>
-      <td>Not Available</td>
       <td>Not Available</td>
       <td class="na-text">N/A</td>
     </tr>
     <tr>
       <td>1:00 PM - 3:00 PM</td>
       <td>Not Available</td>
-      <td>Not Available</td>
       <td class="na-text">N/A</td>
     </tr>
     <tr>
       <td>3:00 PM - 5:00 PM</td>
       <td>Available</td>
-      <td>Available</td>
-      <td><button id="btn3" class="reserve-button" onclick="reserve('btn3', '3:00 PM - 5:00 PM')">Reserve</button></td>
+      <td><button id="btn1" class="reserve-button" onclick="reserve('btn1', '3:00 PM - 5:00 PM')">Reserve</button></td>
+      <button id="cancel1" class="cancel-button" onclick="cancelReservation('btn1', '3:00 PM - 5:00 PM')">Cancel</button>
+    
     </tr>
     <tr>
       <td>5:00 PM - 7:00 PM</td>
       <td>Available</td>
-      <td>Available</td>
-      <td><button id="btn4" class="reserve-button" onclick="reserve('btn4', '5:00 PM - 7:00 PM')">Reserve</button></td>
+      <td><button id="btn1" class="reserve-button" onclick="reserve('btn1', '5:00 PM - 7:00 PM')">Reserve</button></td>
+      <button id="cancel1" class="cancel-button" onclick="cancelReservation('btn1', '5:00 PM - 7:00 PM')">Cancel</button>
+    
     </tr>
   </tbody>
 </table>
@@ -195,6 +197,7 @@
   <h3>Reservation Successful</h3>
   <p id="reserved-time"></p>
 </div>
+
  <script src="script.js"></script>
  
 </section>
