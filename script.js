@@ -153,7 +153,10 @@ function borrow(timeSlot) {
 function checkLoginStatus() {
     return false;
 }
-
+//reservatin
+function changeSelection(selection) {
+  document.getElementById('dropdownText').textContent = selection;
+}
 
 
 

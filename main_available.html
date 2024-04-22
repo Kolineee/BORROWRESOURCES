@@ -71,8 +71,37 @@
 </header>
 
 <section class="projector-section">
+  <div class="containerr"><div class="searchh-bar"><div class="dropdown3">
+    <button class="dropdown3-btn"><span id="dropdownText">Days</span> <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown3-content">
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Projector 1')">Projector 1</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Projector 2')">Projector 2</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('HDMI')">HDMI</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('TV')">TV</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Whiteboard')">Whiteboard</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Lab 1')">Lab 1</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Lab 2')">Lab 2</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Lec 1')">Lec 1</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Lec 2')">Lec 2</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Lec 3')">Lec 3</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Lec 4')">Lec 4</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Auditorium')">Auditorium</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Monday')">Monday</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Tuesday')">Tuesday</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Wednesday')">Wednesday</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Thursday')">Thursday</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Friday')">Friday</a>
+      <a href="#" class="dropdown3-item" onclick="changeSelection('Saturday')">Saturday</a>
+              </div>
+          </div>
+          <input type="text" class="searchh-input" placeholder="Search...">
+          <button class="searchh-bttn"><i class="fa fa-search"></i></button>
+      </div>
+  </div>
+
+<section class="projector-section">
   
-  <h2>Availability - Monday</h2>
+  <h2 class="texth2">Availability</h2>
 
 <table>
 <thead>
@@ -91,6 +120,7 @@
     <td>HDMI</td>
     <td>Available</td>
     <td><button id="btn1" class="reserve-button" onclick="reserve('btn1', '7:00 AM - 9:00 AM')">Reserve</button></td>
+      <button id="cancel1" class="cancel-button" onclick="cancelReservation('btn1', '7:00 AM - 9:00 AM')">Cancel</button>
   </tr>
   <tr>
     <td>9:00 AM - 11:00 AM</td>
@@ -98,6 +128,7 @@
     <td>Projector 2</td>
     <td>Available</td>
     <td><button id="btn2" class="reserve-button" onclick="reserve('btn2', '9:00 AM - 11:00 AM')">Reserve</button></td>
+    <button id="cancel2" class="cancel-button" onclick="cancelReservation('btn2', '9:00 AM - 11:00 AM')">Cancel</button>
   </tr>
   
   <tr>
@@ -106,54 +137,62 @@
     <td>Lecture 1</td>
     <td>Available</td>
     <td><button id="btn3" class="reserve-button" onclick="reserve('btn3', '3:00 PM - 5:00 PM')">Reserve</button></td>
+      <button id="cancel3" class="cancel-button" onclick="cancelReservation('btn3', '3:00 PM - 5:00 PM')">Cancel</button>
   </tr>
   <tr>
     <td>3:00 PM - 5:00 PM</td>
     <td>wednesday</td>
     <td>Lecture 1</td>
     <td>Available</td>
-    <td><button id="btn3" class="reserve-button" onclick="reserve('btn3', '3:00 PM - 5:00 PM')">Reserve</button></td>
+    <td><button id="btn4" class="reserve-button" onclick="reserve('btn4', '3:00 PM - 5:00 PM')">Reserve</button></td>
+      <button id="cancel4" class="cancel-button" onclick="cancelReservation('btn4', '3:00 PM - 5:00 PM')">Cancel</button>
   </tr>
   <tr>
     <td>5:00 PM - 7:00 PM</td>
     <td>Wednesday</td>
     <td>Lecture 4</td>
     <td>Available</td>
-    <td><button id="btn4" class="reserve-button" onclick="reserve('btn4', '5:00 PM - 7:00 PM')">Reserve</button></td>
+    <td><button id="btn5" class="reserve-button" onclick="reserve('btn5', '5:00 PM - 7:00 PM')">Reserve</button></td>
+    <button id="cancel5" class="cancel-button" onclick="cancelReservation('btn5', '5:00 PM - 7:00 PM')">Cancel</button>
   </tr>
   <td>7:00 AM - 9:00 AM</td>
   <td>Thursday</td>
     <td>HDMI</td>
     <td>Available</td>
-    <td><button id="btn1" class="reserve-button" onclick="reserve('btn1', '7:00 AM - 9:00 AM')">Reserve</button></td>
+    <td><button id="btn6" class="reserve-button" onclick="reserve('btn6', '7:00 AM - 9:00 AM')">Reserve</button></td>
+    <button id="cancel6" class="cancel-button" onclick="cancelReservation('btn6', '7:00 AM - 9:00 AM')">Cancel</button>
   </tr>
   <tr>
     <td>9:00 AM - 11:00 AM</td>
     <td>Thursday</td>
     <td>Projector 2</td>
     <td>Available</td>
-    <td><button id="btn2" class="reserve-button" onclick="reserve('btn2', '9:00 AM - 11:00 AM')">Reserve</button></td>
+    <td><button id="btn7" class="reserve-button" onclick="reserve('btn7', '9:00 AM - 11:00 AM')">Reserve</button></td>
+      <button id="cancel7" class="cancel-button" onclick="cancelReservation('btn7', '9:00 AM - 11:00 AM')">Cancel</button>
   </tr>
   <tr>
     <td>7:00 AM - 9:00 AM</td>
   <td>Friday</td>
     <td>HDMI</td>
     <td>Available</td>
-    <td><button id="btn1" class="reserve-button" onclick="reserve('btn1', '7:00 AM - 9:00 AM')">Reserve</button></td>
+    <td><button id="btn8" class="reserve-button" onclick="reserve('btn8', '7:00 AM - 9:00 AM')">Reserve</button></td>
+    <button id="cancel8" class="cancel-button" onclick="cancelReservation('btn8', '7:00 AM - 9:00 AM')">Cancel</button>
   </tr>
   <tr>
     <td>9:00 AM - 11:00 AM</td>
     <td>Friday</td>
     <td>Projector 2</td>
     <td>Available</td>
-    <td><button id="btn2" class="reserve-button" onclick="reserve('btn2', '9:00 AM - 11:00 AM')">Reserve</button></td>
+    <td><button id="btn9" class="reserve-button" onclick="reserve('btn9', '9:00 AM - 11:00 AM')">Reserve</button></td>
+    <button id="cancel9" class="cancel-button" onclick="cancelReservation('btn9', '9:00 AM - 11:00 AM')">Cancel</button>
   </tr>
   <tr>
     <td>9:00 AM - 11:00 AM</td>
     <td>Saturday</td>
     <td>Projector 2</td>
     <td>Available</td>
-    <td><button id="btn2" class="reserve-button" onclick="reserve('btn2', '9:00 AM - 11:00 AM')">Reserve</button></td>
+    <td><button id="btn10" class="reserve-button" onclick="reserve('btn10', '9:00 AM - 11:00 AM')">Reserve</button></td>
+    <button id="cancel10" class="cancel-button" onclick="cancelReservation('btn10', '9:00 AM - 11:00 AM')">Cancel</button>
   </tr>
   <tr>
 </tbody>
