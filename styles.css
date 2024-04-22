@@ -1048,19 +1048,8 @@ p{
     background-color: #bedac6;
    height: 400px;
 }
-.setting-sec2{
-  background-color: #73937c;
-  h2{margin-left: 650px;}
-}
-.add-account-button,
-.changepass-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-}
+
+
 
 /* Hover effect */
 .add-account-button:hover,
@@ -1353,3 +1342,276 @@ tr:nth-child(even) {
   background-color: green;
 }
 
+/* account setting */
+.sec-account-setting{
+  height: 900px;
+  padding-top: 100px;
+  background-color: #ceeece;
+}
+
+.edit-account-btn{
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(194, 188, 188);
+}
+
+.setting-sec2{
+  background-color: #73937c;
+  text-align: center;
+}
+
+.add-account-button,
+.changepass-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+/* CSS for Password Management section */
+.setting-changepass {
+  background-color: #add7be; /* Setting background color */
+  color: white; /* Setting text color */
+  padding: 20px; /* Adding padding */
+}
+
+.changepass-txt {
+  color: rgb(52, 50, 50);
+  padding-right: 220px;
+  text-align: center; /* Centering the text */
+}
+
+.changepass {
+  margin: 0 auto; /* Centering the form */
+  max-width: 400px; /* Setting max width for the form */
+}
+
+.changepass form {
+  text-align: center; /* Centering the form elements */
+}
+
+.changepass input[type="old-pass"],
+.changepass input[type="new-password"],
+.changepass input[type="neww-password"] {
+  width: 100%; /* Setting input width */
+  padding: 10px; /* Adding padding */
+  margin-bottom: 10px; /* Adding margin */
+  box-sizing: border-box; /* Including padding and border in input's total width and height */
+}
+
+.changepass input[type="Submit"] {
+  width: 100%; /* Setting button width */
+  padding: 10px; /* Adding padding */
+  margin-top: 10px; /* Adding margin */
+  background-color: #4CAF50; /* Setting button background color */
+  color: white; /* Setting button text color */
+  border: none; /* Removing border */
+  cursor: pointer; /* Changing cursor to pointer on hover */
+}
+
+.changepass input[type="Submit"]:hover {
+  background-color: #45a049; /* Changing background color on hover */
+}
+
+/* for the notification & privacy*/
+/* The switch - adapted from https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider (circle) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #207b32;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #a00e24;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #e1e6eb;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* for ano oh the edit profile*/
+
+.sec-accountedit-setting {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+}
+
+#pfp-user-profile {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  border-radius: 50%; /* Ensure circular shape for the image */
+  margin-right: 20px; /* Adjust spacing between image and content */
+}
+
+.content {
+  width: 100%;
+}
+
+form {
+  max-width: 400px; /* Adjust maximum width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+form div {
+  margin-bottom: 10px; /* Adjust spacing between form elements */
+}
+
+label {
+  font-weight: bold; /* Make labels bold */
+  display: block; /* Ensure labels are on their own line */
+}
+
+input[type="text"],
+select {
+  width: 100%; /* Take up full width of parent container */
+  padding: 8px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Add border for input fields */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  margin-top: 5px; /* Adjust spacing between input fields */
+}
+
+button[type="submit"],
+button.save-changes-btn {
+  width: 100%; /* Take up full width of parent container */
+  padding: 10px; /* Adjust padding as needed */
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button[type="submit"]:hover,
+button.save-changes-btn:hover {
+  background-color: #45a049; /* Darker green background color on hover */
+}
+
+/* Additional styles for responsiveness (optional) */
+@media screen and (max-width: 600px) {
+  .sec-account-setting {
+    flex-direction: column; /* Stack image and content vertically on small screens */
+    align-items: flex-start; /* Align items to the start of the container */
+  }
+  
+  #pfp-user-profile {
+    margin: 0 auto 20px; /* Center the image horizontally */
+  }
+}
+
+/* New CSS styles */
+.new-section {
+  display: flex; /* Maintain flex layout for the new section */
+  align-items: center; /* Align items vertically in the new section */
+  margin-top: 20px; /* Add some spacing between sections */
+}
+
+.new-section img {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  border-radius: 50%; /* Ensure circular shape for the image */
+  margin-right: 20px; /* Adjust spacing between image and content */
+}
+
+.new-content {
+  width: 100%; /* Take up full width of parent container */
+}
+
+.new-form {
+  max-width: 400px; /* Adjust maximum width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.new-form div {
+  margin-bottom: 10px; /* Adjust spacing between form elements */
+}
+
+.new-label {
+  font-weight: bold; /* Make labels bold */
+  display: block; /* Ensure labels are on their own line */
+}
+
+.new-input,
+.new-select {
+  width: 100%; /* Take up full width of parent container */
+  padding: 8px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Add border for input fields */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  margin-top: 5px; /* Adjust spacing between input fields */
+}
+
+.new-button,
+.new-save-changes-btn {
+  width: 100%; /* Take up full width of parent container */
+  padding: 10px; /* Adjust padding as needed */
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.new-button:hover,
+.new-save-changes-btn:hover {
+  background-color: #45a049; /* Darker green background color on hover */
+}
+
+/* Additional styles for responsiveness (optional) */
+@media screen and (max-width: 600px) {
+  .new-section {
+    flex-direction: column; /* Stack image and content vertically on small screens */
+    align-items: flex-start; /* Align items to the start of the container */
+  }
+  
+  .new-section img {
+    margin: 0 auto 20px; /* Center the image horizontally */
+  }
+}
