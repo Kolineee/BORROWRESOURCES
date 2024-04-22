@@ -86,25 +86,53 @@
               <li><a href="notification.html">Notification</a></li>
               <li><a href="privacy.html">Privacy</a></li>
               <li><a href="terms.html">Terms and Privacy Policy</a></li>
-              <li><a href="feedback.html">Feedback</a></li>
+             
             </ul>
           </nav>
         </div>
       </div>
-
-      <div class="prof-info">
-        <h1>PROFILE INFORMATION</h1><br><br>
-        <div class="profilebox" id="profile-box">
-        <div class="fname"><strong>First Name:</strong>   Calista</div>
-        <div class="lname"><strong>Last Name:</strong>   Perez</div>
-        <div class="usern"><strong>Username:</strong>  Cally</div>
-        <div class="course"><strong>Course:</strong>   BSCS</div>
-        <div class="y&section"><strong>Year & section:</strong>  2C</div>
-        <div class="contact-no."><strong>Contact:</strong>  09999966621</div>
-       <br>
-        <button class="editprofile-button" onclick="window.location.href='editprofile.html'">Edit Profile</button>
-      </div>
- <h1> edit profile</h1>
+        
+      <section class="sec-accountedit-setting">
+          <form action="account.html" method="POST">
+            <div class="fname">
+              <label for="first-name"><strong>First Name:</strong></label>
+              <input type="text" id="first-name" name="first-name" value="Calista">
+            </div><br>
+            <div class="lname">
+              <label for="last-name"><strong>Last Name:</strong></label>
+              <input type="text" id="last-name" name="last-name" value="Perez">
+            </div><br>
+            <div class="uname">
+              <label for="username"><strong>Username:</strong></label>
+              <input type="text" id="username" name="username" value="Calie">
+            </div><br>
+            <div class="role">
+              <label for="role"><strong>Role:</strong></label>
+              <select id="role" name="role">
+                <option value="student" selected>Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="staff">Staff</option>
+              </select>
+            </div><br>
+            <div class="snumber">
+              <label for="student-number"><strong>Student number:</strong></label>
+              <input type="text" id="student-number" name="student-number" value="202205480">
+            </div><br>
+            <div class="course">
+              <label for="course"><strong>Course:</strong></label>
+              <input type="text" id="course" name="course" value="Bachelor of Science in Computer Science">
+            </div><br>
+            <div class="y&s">
+              <label for="year-section"><strong>Year & Section:</strong></label>
+              <input type="text" id="year-section" name="year-section" value="2nd year C">
+            </div> 
+            <p><br></p>   
+            <button type="submit" class="save-changes-btn">Save Changes</button> 
+            <p><br></p>     
+          </form>
+        </div>   
+      </section>
+      
 </section>
 
 </body>
