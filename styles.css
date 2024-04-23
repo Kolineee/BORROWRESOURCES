@@ -921,17 +921,16 @@ p{
 
 .pb{ /*Borrowed*/
   width: 100%;
-  height: 35vh;
+  height: 90vh;
 
 }
 .container {
-  display: flex;
   margin-top: 30px;
 }
 
 .pbh1 {
   margin-top: 0%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   margin-right: 25px;
   margin-left: 10px;
   flex-wrap: wrap;
@@ -940,12 +939,29 @@ p{
 }
 
 .boxs {
-  display: flex; 
   justify-content: center; 
   align-items: center; 
-  width: 280px;
+  width: 900px;
+  height: 150px;
+  margin-left: 270px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #84ac90;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.pbbb{
+  margin-top: 20px;
+  width: 100%;
+  height: 40vh;
+ 
+}
+.boxsss{
+  width: 900px;
   height: 230px;
-  margin: 20px;
+  margin-left: 270px;
+  margin-bottom: 30px;
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
@@ -953,20 +969,13 @@ p{
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.boxs img {
-  width: auto; 
-  height: auto; 
-  max-width: 180px; 
-  max-height: 250px; 
-  object-fit: contain; 
-}
 .boxs1{
     display: flex; 
     justify-content: center; 
     align-items: center; 
     width: 950px;
     height: 230px;
-    margin: 30px;
+    margin-top: 10px; 
     border-radius: 10px;
     overflow: hidden;
     background-color: #ffffff;
@@ -975,28 +984,27 @@ p{
 }
 .pb1 {
   width: 100%;
-  height: 400px;
-  background-color: rgb(225, 240, 234);
+  height: 330px;
   padding: 30px 0;
-  margin-top: 30px;
+  margin-top: 75px;
 }
 
 .con {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .Feedbck {
-  width: 30%;
+  width: 94%;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background: linear-gradient( to right, rgb(157, 223, 157), rgb(13, 157, 13));
+  box-shadow: 0 0 10px rgba(4, 79, 26, 0.5);
 }
 
 .Feedbck p {
-  font-size: 16px;
+  font-size: 20px;
   font-style: italic;
   color: #333;
   text-align: center;
