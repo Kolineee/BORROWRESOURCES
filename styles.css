@@ -256,10 +256,13 @@ h1 {
     
 }
  .sec1{
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-bottom: 40px;
     background-color: #ffffff;
  }
  .box{
@@ -287,10 +290,7 @@ p{
     font-size: 15px;
     margin-top: 15px;
 }
-.foot1{
-    display: flex;
-    margin-top: 550px;
-}
+
 .box2{
     padding: 6px;
     padding-left: 20px;
@@ -399,8 +399,14 @@ p{
     .faq{
         text-align: center;
     }
+/*ABOUT*/
+.atsec{
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
 
-.box3{ /*ABOUT*/
+.box3{ 
     width: 1250px; 
     height: 100px; 
     background-color: #ffffff; 
@@ -447,10 +453,7 @@ p{
     margin-bottom: 40px;
     margin-top: 40px;
  }
- .foot2{
 
-    margin-top: 800px;
- }
  .icons{
    display: flex;
    align-items: center;
@@ -1016,10 +1019,35 @@ p{
   text-align: center;
 }
 
-.foot3{
-  width: 100%;
-  height: 50vh;
-  background-color:  #114720;;
+.footer {
+    width: 100%;
+    height: 50vh;
+    background-color: #114720;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.footer-section {
+    flex-basis: 25%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px; 
+    font-weight: 200;
+  }
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.copyright {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
 }
 /*Setting-account*/
 .prof-info{
@@ -1076,8 +1104,11 @@ p{
 
 /*projector*/
 .projector-section{
+  width: 100%;
+  height: 120vh;
   text-align: center;
   background-color: rgb(124, 159, 124);
+  margin-bottom: 100px;
 }
 .containerr {
   width: 50%; 
