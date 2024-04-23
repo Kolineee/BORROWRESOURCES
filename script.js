@@ -14,116 +14,81 @@ function toggleNotification() {
 }
 
 //Para functinable ang mga notif
- var hasReserved = false;
-  var notificationTimeout;
+var hasReserved = false;
+var notificationTimeout;
 
-  // Function to reserve a time slot
-  function reserve(buttonId, timeSlot) {
-    if (hasReserved) {
-      showAlert('You have already reserved a time slot for today.');
-      return;
-    }
-
-    // Check if the time slot has at least 2 hours available
-    var startTime = timeSlot.split(' - ')[0];
-    var endTime = timeSlot.split(' - ')[1];
-    var startHour = parseInt(startTime.split(':')[0]);
-    var endHour = parseInt(endTime.split(':')[0]);
-    if (endHour - startHour < 2) {
-      showAlert('The projector must be reserved for at least 2 hours.');
-      return;
-    }
-
-    // Update button style to indicate reservation and disable it
-    var button = document.getElementById(buttonId);
-    button.textContent = 'Reserved';
-    button.classList.add('reserved');
-    button.disabled = true;
-
-    // Show the cancel button
-    var cancelButton = document.getElementById('cancel' + buttonId.slice(3));
-    cancelButton.style.display = 'inline-block';
-
-    // Update reservation status
-    hasReserved = true;
-
-    // Display success message in notification
-    showNotification('Reservation Successful', 'Reserved time: ' + timeSlot);
+// Function to reserve a time slot
+function reserve(buttonId, timeSlot) {
+  if (hasReserved) {
+    showAlert('You have already reserved a time slot for today.');
+    return;
   }
 
-  // Function to cancel a reservation
-  function cancelReservation(buttonId, timeSlot) {
-    var button = document.getElementById(buttonId);
-    var cancelButton = document.getElementById('cancel' + buttonId.slice(3)); 
-    cancelButton.style.display = 'none'; 
-    button.textContent = 'Reserve'; 
-    button.classList.remove('reserved'); 
-    button.disabled = false; 
-    hasReserved = false; 
-    showNotification('Reservation Cancelled', 'Cancelled time: ' + timeSlot);
-    setTimeout(function() {
-      var notification = document.getElementById('notification');
-      notification.style.display = 'none';
-    }, 2000); // 2 seconds
+  // Check if the time slot has at least 2 hours available
+  var startTime = timeSlot.split(' - ')[0];
+  var endTime = timeSlot.split(' - ')[1];
+  var startHour = parseInt(startTime.split(':')[0]);
+  var endHour = parseInt(endTime.split(':')[0]);
+  if (endHour - startHour < 2) {
+    showAlert('The projector must be reserved for at least 2 hours.');
+    return;
   }
 
-  // Function to show alert notification
-  function showAlert(message) {
-    var notification = document.getElementById('notification');
-    var notificationTitle = notification.querySelector('h3');
-    var notificationMessage = notification.querySelector('p');
+  // Update button style to indicate reservation and disable it
+  var button = document.getElementById(buttonId);
+  button.textContent = 'Reserved';
+  button.classList.add('reserved');
+  button.disabled = true;
 
-    notificationTitle.textContent = 'Error';
-    notificationMessage.textContent = message;
-    notification.style.display = 'block';
+  // Show the cancel button
+  var cancelButton = document.getElementById('cancel' + buttonId.slice(3));
+  cancelButton.style.display = 'inline-block';
 
-    // Disable all reserve buttons
-    var reserveButtons = document.querySelectorAll('.reserve-button');
-    reserveButtons.forEach(function(button) {
-      button.disabled = true;
-    });
+  // Update reservation status
+  hasReserved = true;
 
-    // Clear previous timeout if exists
-    if (notificationTimeout) {
-      clearTimeout(notificationTimeout);
-    }
+  // Display success message in notification
+  showNotification('Reservation Successful', 'Reserved time: ' + timeSlot, 3000); // 3 seconds
+}
 
-    // Hide the notification after 5 seconds
-    notificationTimeout = setTimeout(function() {
-      notification.style.display = 'none';
-      // Enable all reserve buttons after hiding the notification
-      reserveButtons.forEach(function(button) {
-        button.disabled = false;
-      });
-    }, 5000); // 5 seconds
+// Function to cancel a reservation
+function cancelReservation(buttonId, timeSlot) {
+  var button = document.getElementById(buttonId);
+  var cancelButton = document.getElementById('cancel' + buttonId.slice(3)); 
+  cancelButton.style.display = 'none'; 
+  button.textContent = 'Reserve'; 
+  button.classList.remove('reserved'); 
+  button.disabled = false; 
+  hasReserved = false; 
+  showNotification('Reservation Cancelled', 'Cancelled time: ' + timeSlot, 2000); // 2 seconds
+}
+
+// Function to show alert notification
+function showAlert(message) {
+  showNotification('Error', message, 3000); // 3 seconds
+}
+
+// Function to show notification
+function showNotification(title, message, duration) {
+  var notification = document.getElementById('notification');
+  var notificationTitle = notification.querySelector('h3');
+  var notificationMessage = notification.querySelector('p');
+
+  notificationTitle.textContent = title;
+  notificationMessage.textContent = message;
+  notification.style.display = 'block';
+
+  // Clear previous timeout if exists
+  if (notificationTimeout) {
+    clearTimeout(notificationTimeout);
   }
 
-  // Function to show success notification
-  function showNotification(title, message) {
-    var notification = document.getElementById('notification');
-    var notificationTitle = notification.querySelector('h3');
-    var notificationMessage = notification.querySelector('p');
+  // Hide the notification after the specified duration
+  notificationTimeout = setTimeout(function() {
+    notification.style.display = 'none';
+  }, duration);
+}
 
-    notificationTitle.textContent = title;
-    notificationMessage.textContent = message;
-    notification.style.display = 'block';
-  }
-
-  // Function to cancel all reservations
-  function cancelAllReservations() {
-    var reserveButtons = document.querySelectorAll('.reserve-button');
-    var cancelButtons = document.querySelectorAll('.cancel-button');
-
-    reserveButtons.forEach(function(button, index) {
-      button.textContent = 'Reserve';
-      button.classList.remove('reserved');
-      button.disabled = false;
-      cancelButtons[index].style.display = 'none';
-    });
-
-    hasReserved = false;
-    showNotification('All Reservations Cancelled', 'All reservations have been cancelled.');
-  }
 
 // reserve button click
 function borrow(timeSlot) {
