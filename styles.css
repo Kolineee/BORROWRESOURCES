@@ -1571,15 +1571,47 @@ input:checked + .slider:before {
 
 .sec-accountedit-setting {
   display: flex;
-  align-items: center;
-  margin-top: 200px;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center items vertically */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 46px;
+  left: 180px;
+  width: calc(100% - 180px); 
+  height: calc(100vh - 46px);
+  overflow-y: auto;
+  z-index: 9999;
+  background-color: rgb(227, 245, 227);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0px; 
 }
 
+.sec-accountedit-setting form {
+  max-width: 400px; 
+  margin: 0 auto; 
+  padding: 20px;
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  background-color: #f9f9f9; 
+}
+
+.sec-accountedit-setting label,
+.sec-accountedit-setting input,
+.sec-accountedit-setting select {
+  display: block; 
+  margin-bottom: 10px; 
+}
+
+
+
 #pfp-user-profile {
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
-  border-radius: 50%; /* Ensure circular shape for the image */
-  margin-right: 20px; /* Adjust spacing between image and content */
+  width: 100px;
+  height: 100px; 
+  border-radius: 50%; 
+  margin-right: 20px; 
 }
 
 .content {
@@ -1624,7 +1656,7 @@ button.save-changes-btn {
 
 button[type="submit"]:hover,
 button.save-changes-btn:hover {
-  background-color: #45a049; /* Darker green background color on hover */
+  background-color: #45a049; /* green background color on hover */
 }
 
 /* Additional styles for responsiveness (optional) */
@@ -1709,3 +1741,5 @@ button.save-changes-btn:hover {
     margin: 0 auto 20px; /* Center the image horizontally */
   }
 }
+
+/* edit profile section*/
