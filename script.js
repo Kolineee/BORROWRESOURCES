@@ -36,7 +36,7 @@ function reserve(buttonId, timeSlot) {
 
   // Update button style to indicate reservation and disable it
   var button = document.getElementById(buttonId);
-  button.textContent = 'Reserved';
+  button.textContent = 'Borrowed';
   button.classList.add('reserved');
   button.disabled = true;
 
